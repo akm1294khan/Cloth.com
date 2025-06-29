@@ -1,0 +1,156 @@
+06.29 08:59
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose Garments</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 30px;
+    }
+    .product-container {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .product-image {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .details-button, .contact-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .details-button {
+      background-color: #4CAF50;
+    }
+    .details-button:hover {
+      background-color: #45a049;
+    }
+    .contact-button {
+      background-color: #25D366;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .contact-button:hover {
+      background-color: #1DA851;
+    }
+    .details-section {
+      display: none;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .whatsapp-icon {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rose Garments</h1>
+
+  <!-- Image 1 -->
+  <div class="product-container">
+    <img src="1.jpg" alt="Product 1" class="product-image">
+    <button class="details-button" onclick="toggleDetails('d1')">Details</button>
+    <div class="details-section" id="d1">
+      <p>Summer design 1</p>
+      <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp-icon">
+        Contact Us
+      </a>
+    </div>
+  </div>
+
+  <!-- Image 2 -->
+  <div class="product-container">
+    <img src="2.jpg" alt="Product 2" class="product-image">
+    <button class="details-button" onclick="toggleDetails('d2')">Details</button>
+    <div class="details-section" id="d2">
+      <p>Summer design 2</p>
+      <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp-icon">
+        Contact Us
+      </a>
+    </div>
+  </div>
+
+  <!-- Image 3 -->
+  <div class="product-container">
+    <img src="3.jpg" alt="Product 3" class="product-image">
+    <button class="details-button" onclick="toggleDetails('d3')">Details</button>
+    <div class="details-section" id="d3">
+      <p>Summer design 3</p>
+      <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp-icon">
+        Contact Us
+      </a>
+    </div>
+  </div>
+
+  <!-- Image 4 -->
+  <div class="product-container">
+    <img src="4.jpg" alt="Product 4" class="product-image">
+    <button class="details-button" onclick="toggleDetails('d4')">Details</button>
+    <div class="details-section" id="d4">
+      <p>Summer design 4</p>
+      <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp-icon">
+        Contact Us
+      </a>
+    </div>
+  </div>
+
+  <!-- Image 5 -->
+  <div class="product-container">
+    <img src="5.jpg" alt="Product 5" class="product-image">
+    <button class="details-button" onclick="toggleDetails('d5')">Details</button>
+    <div class="details-section" id="d5">
+      <p>Summer design 5</p>
+      <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp-icon">
+        Contact Us
+      </a>
+    </div>
+  </div>
+
+  <!-- Image 6 -->
+  <div class="product-container">
+    <img src="6.jpg" alt="Product 6" class="product-image">
+    <button class="details-button" onclick="toggleDetails('d6')">Details</button>
+    <div class="details-section" id="d6">
+      <p>Summer design 6</p>
+      <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp-icon">
+        Contact Us
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
